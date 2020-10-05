@@ -450,7 +450,7 @@ class ParagraphPropertySet:
 
         self.Tabs = []
         if tabs:
-            apply(self.SetTabs, tabs)
+            self.SetTabs(*tabs)
 
         self.SetFirstLineIndent(first_line_indent or None)
         self.SetLeftIndent(left_indent or None)
