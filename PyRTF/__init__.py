@@ -1,5 +1,5 @@
 from . import rtfunicode
-from .PropertySets import *
 from .Elements import *
-from .Styles import *
+from .PropertySets import *
 from .Renderer import *
+from .Styles import *

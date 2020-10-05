@@ -1,3 +1,7 @@
+# coding=utf-8
+
+from __future__ import absolute_import, unicode_literals, division, print_function
+
 # Taken from http://www.zopatista.com/python/2012/06/06/rtf-and-unicode/
 
 # Encode unicode strings to RTF 1.5-compatible command codes.
@@ -36,7 +40,6 @@ else:
 def _rtfunicode_encode(text, errors):
     # Encode to RTF \uDDDDD? signed 16 integers and replacement char
     return _charescape.sub(_replace, text).encode('ascii', errors)
-
 
 
 class Codec(codecs.Codec):
